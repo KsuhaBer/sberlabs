@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* src/index.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* styles.css */
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* src/index.css или другой файл стилей */
+.theme-toggle-button {
+    padding: 8px 12px; /* Размер кнопки */
+    font-size: 14px; /* Размер текста */
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer; /* Указатель при наведении */
+}
+

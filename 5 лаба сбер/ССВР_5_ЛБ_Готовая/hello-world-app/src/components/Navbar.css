@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    gap: 30px;
+    padding-left: 45px;
+}
+
+.nav-link {
+    text-decoration: none; 
+    color: #4A90E2;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffb6c1;
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
