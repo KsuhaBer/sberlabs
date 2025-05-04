@@ -1,0 +1,44 @@
+/* Стили для мобильной версии */
+.mobile-table-wrapper {
+    display: none;
+    position: relative; /* Для абсолютного позиционирования фиксированной колонки */
+}
+
+.fixed-column {
+    position: sticky;
+    left: 0;
+    background-color: white; /* Цвет фона фиксированной колонки */
+    z-index: 1; /* Убедитесь, что фиксированная колонка находится выше остальных */
+}
+
+/* Остальные стили остаются прежними */
+@media (max-width: 1000px) {
+    .table-wrapper {
+        display: none;
+    }
+    
+    .mobile-table-wrapper {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .mobile-table {
+        display: inline-block;
+        min-width: 100%;
+        border-collapse: collapse;
+        table-layout: auto; /* Позволяет колонкам занимать нужное пространство */
+    }
+    
+    .mobile-table th,
+    .mobile-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+        white-space: nowrap;
+    }
+}
